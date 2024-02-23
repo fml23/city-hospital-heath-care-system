@@ -1,0 +1,169 @@
+/* Resetting some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling the header */
+  header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand img {
+    max-height: 40px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Styling the page title section */
+  .page-title {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .page-title h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  /* Styling the appointment section */
+  .appointment {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  .appointment .feature-icon {
+    font-size: 48px;
+    color: #333;
+  }
+  
+  .appointment h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+  }
+  .appoinment-form input[type="calendar"] {
+    width: calc(100% - 25px); /* Adjust width to accommodate the icon */
+    padding: 10px;
+    margin-bottom: 55px;
+    border: 50px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%231F2D3D" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17.3 5.3l-4-4c-.4-.4-1-.4-1.4 0l-8 8c-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3s.5-.1.7-.3l8-8c.4-.4.4-1 0-1.4zm-1.4 1.4l-8 8-3.3 1.2 1.2-3.3 8-8 3.3-1.2-1.2 3.3z"/></svg>');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: left 10px top 90%; /* Adjusted background position */
+  }
+  
+  /* Styling the footer */
+  .footer {
+    background-color: #333;
+    padding: 50px 0;
+    color: #fff;
+  }
+  
+  .footer .widget h4 {
+    color: #fff;
+  }
+  
+  .footer .footer-menu li {
+    margin-bottom: 10px;
+  }
+  
+  .footer .footer-menu a {
+    color: #fff;
+  }
+  
+  /* Additional custom styles can be added here */
+  /* Custom CSS for the appointment form */
+  
+  .appoinment-wrap {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .appoinment-form label {
+    font-weight: bold;
+  }
+  
+  .appoinment-form input[type="text"],
+  .appoinment-form input[type="date"],
+  .appoinment-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .appoinment-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%231F2D3D" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17.3 5.3l-4-4c-.4-.4-1-.4-1.4 0l-8 8c-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3s.5-.1.7-.3l8-8c.4-.4.4-1 0-1.4zm-1.4 1.4l-8 8-3.3 1.2 1.2-3.3 8-8 3.3-1.2-1.2 3.3z"/></svg>');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+  }
+  
+  .appoinment-form button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .appoinment-form button[type="submit"]:hover {
+    background-color: #0056b3;
+    border: #007bff;
+  }
+  
+  @media (max-width: 767px) {
+    .appoinment-wrap {
+      padding: 20px;
+    }
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+  .makeAppointmentBtn{
+      font-family: Roboto, sans-serif;
+    font-weight: 0;
+    font-size: 14px;
+    color: #fff;
+    background: linear-gradient(90deg, #0066CC 0%, #c500cc 100%);
+    padding: 10px 30px;
+    border: 2px solid #0066cc;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    }
+    
+    .makeAppointmentBtn:hover{
+    
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background: linear-gradient(90deg, #0066CC 0%, #c500cc 100%);
+    color: #0066cc;
+    border: solid 2px #0066cc;
+    }
+    
+  
+    
+    

@@ -1,0 +1,144 @@
+/*
+ * Pikaday CSS
+ * 
+ * Based on: https://github.com/dbushell/Pikaday
+ */
+
+ .pika-single {
+    z-index: 9999;
+    display: block;
+    position: relative;
+    color: #333;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-bottom-color: #bbb;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  .pika-single.is-hidden {
+    display: none;
+  }
+  
+  .pika-lendar {
+    overflow: hidden;
+  }
+  
+  .pika-title {
+    position: relative;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 5px;
+  }
+  
+  .pika-label {
+    display: inline-block;
+    display: inline;
+    position: relative;
+    z-index: 9999;
+    overflow: hidden;
+    margin: 0 2px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .pika-prev,
+  .pika-next {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 6px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .pika-prev:hover,
+  .pika-next:hover {
+    width: auto;
+    height: auto;
+    margin: 0;
+    text-indent: 0;
+    font-size: 1em;
+    position: static;
+    color: #ccc;
+  }
+  
+  .pika-prev:after {
+    content: '‹';
+    font-size: 24px;
+  }
+  
+  .pika-next:after {
+    content: '›';
+    font-size: 24px;
+  }
+  
+  .pika-prev.is-disabled,
+  .pika-next.is-disabled {
+    cursor: default;
+    visibility: hidden;
+  }
+  
+  .pika-select {
+    display: inline;
+    float: left;
+  }
+  
+  .pika-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .pika-table th,
+  .pika-table td {
+    width: 14.285714285714286%;
+    padding: 0;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .pika-table th {
+    background-color: #f7f7f7;
+    padding: 5px;
+  }
+  
+  .pika-button {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    color: #666;
+    text-align: center;
+    border: none;
+    background: none;
+  }
+  
+  .pika-button:hover,
+  .pika-button.is-today,
+  .pika-button.is-selected {
+    color: #fff;
+    background: #007bff;
+  }
+  
+  .pika-button.is-disabled {
+    pointer-events: none;
+    color: #ccc;
+    cursor: default;
+  }
+  
+  .pika-button.is-outside-current-month {
+    color: #999;
+  }
+  
+  .pika-button.is-other-month {
+    color: #ddd;
+  }
+  
+  .pika-table abbr {
+    border: none;
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardiology Appointment</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+    <header>
+        <h1>Cardiology Appointment</h1>
+    </header>
+    <main>
+        <form id="appointmentForm">
+            <label for="patientName">Patient's Name:</label>
+            <input type="text" id="patientName" required>
+
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" required>
+                <option value="" disabled selected>Select a doctor</option>
+                <option value="drJones">Dr. Jones</option>
+                <option value="drMiller">Dr. Miller</option>
+                <!-- Add more doctors as needed -->
+            </select>
+
+            <label for="appointmentDate">Appointment Date:</label>
+            <input type="date" id="appointmentDate" required>
+
+            <label for="appointmentTime">Appointment Time:</label>
+            <input type="time" id="appointmentTime" required>
+
+            <button type="button" onclick="scheduleAppointment()">Schedule Appointment</button>
+            <p id="errorMessage" class="error-message"></p>
+            <p id="confirmationMessage" class="confirmation-message"></p>
+        </form>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="scr.js"></script>
+</body>
+</html>
